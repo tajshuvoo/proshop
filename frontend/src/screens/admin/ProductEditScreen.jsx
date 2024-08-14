@@ -22,9 +22,9 @@ const ProductEditScreen = () => {
 
     const {data: product , isLoading , error} = useGetProductsDetailsQuery(productId);
 
-    const [updateProduct , {isLoading: loadingUpdate , error: updateError}] = useUpdateProductMutation(product);
+    const [updateProduct , {isLoading: loadingUpdate}] = useUpdateProductMutation(product);
 
-    const [uploadProductImage , {isLoading: loadingUpload , error: uploadError}] = useUploadProductImageMutation();
+    const [uploadProductImage , {isLoading: loadingUpload }] = useUploadProductImageMutation();
 
     const navigate = useNavigate();
 

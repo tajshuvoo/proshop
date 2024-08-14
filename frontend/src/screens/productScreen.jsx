@@ -16,7 +16,7 @@ const ProductScreen = () => {
     const {id} = useParams();
     const { data:product, refetch , isLoading, error } = useGetProductsDetailsQuery(id);
 
-    const [createReview , {isLoading: loadingReview , isError : errorReview} ] = useCreateReviewMutation();
+    const [createReview , {isLoading: loadingReview } ] = useCreateReviewMutation();
 
     const dispatch = useDispatch();
     const navigate = useNavigate();

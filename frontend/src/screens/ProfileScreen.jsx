@@ -21,7 +21,7 @@ const ProfileScreen = () => {
     const dispatch = useDispatch();
     const {userInfo} = useSelector(state => state.auth);
 
-    const [updateProfile , {isLoading }] = useProfileMutation();
+    const [updateProfile ] = useProfileMutation();
     const {data:orders , isLoading:loadingOrders , error} = useGetMyOrdersQuery();
 
     useEffect(() => {
@@ -29,7 +29,7 @@ const ProfileScreen = () => {
             setName(userInfo.name);
             setEmail(userInfo.email);
         }
-    },[userInfo.name , userInfo.email]);
+    },[userInfo.name , userInfo.email , userInfo]);
 
     const submitHandler = async (e) => {
         e.preventDefault();

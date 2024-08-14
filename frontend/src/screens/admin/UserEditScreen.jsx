@@ -18,7 +18,7 @@ const UserEditScreen = () => {
 
     const {data: user ,refetch, isLoading , error} = useGetUserDetailsQuery(_id);
 
-    const [updateUser , {isLoading: loadingUpdate , error: errorUpdate}] = useUpdateUserMutation();
+    const [updateUser , {isLoading: loadingUpdate }] = useUpdateUserMutation();
 
 
     const navigate = useNavigate();

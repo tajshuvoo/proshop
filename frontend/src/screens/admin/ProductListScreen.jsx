@@ -1,7 +1,7 @@
 import React from 'react'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Table, Button, Row , Col } from 'react-bootstrap'
-import { FaTrash , FaTimes , FaEdit } from 'react-icons/fa'
+import { FaTrash , FaEdit } from 'react-icons/fa'
 import Message from '../../components/message'
 import Loader from '../../components/loader'
 import {useParams} from 'react-router-dom'
@@ -13,9 +13,9 @@ const ProductListScreen = () => {
     const { pageNumber } = useParams();
     const { data, error, isLoading , refetch } = useGetProductsQuery({pageNumber});
 
-    const [createProduct, {isLoading: LoadingCreate , error: errorCreate} ] = useCreateProductMutation();
+    const [createProduct, {isLoading: LoadingCreate } ] = useCreateProductMutation();
 
-    const [deleteProduct, {isLoading: LoadingDelete , error: errorDelete} ] = useDeleteProductMutation();
+    const [deleteProduct, {isLoading: LoadingDelete } ] = useDeleteProductMutation();
 
    const deleteHandler = async (id) => {
         if(window.confirm('Are you sure you want to delete this product?')){

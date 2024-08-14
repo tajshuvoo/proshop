@@ -1,5 +1,5 @@
 import {Link , useParams} from 'react-router-dom'
-import {Row , Col , ListGroup , Image , Card , Button, ListGroupItem} from 'react-bootstrap'
+import {Row , Col , ListGroup , Image , Card , Button} from 'react-bootstrap'
 import {toast} from 'react-toastify'
 import {useEffect} from 'react'
 import { useSelector} from 'react-redux'
@@ -14,7 +14,7 @@ const OrderScreen = () => {
     const {id :orderId } = useParams();
 
     const {data : order , refetch ,isLoading , error} = useGetOrderDetailsQuery(orderId);
-    const [payOrder , {isLoading : LoadingPay , error : errorPay}] = usePayOrderMutation();
+    const [payOrder , {isLoading : LoadingPay }] = usePayOrderMutation();
     const [deliveryOrder , {isLoading: LoadingDelivery}] = useDeliveryOrderMutation();
     const {data : paypal , isLoading: LoadingPaypal , error: errorPaypal} = useGetPaypalClientIdQuery();
     const [{isPending}, paypalDispatch ] = usePayPalScriptReducer();
