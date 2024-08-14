@@ -6,9 +6,6 @@
   "dependencies": {
     "@paypal/react-paypal-js": "^8.5.0",
     "@reduxjs/toolkit": "^2.2.6",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.2",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
@@ -18,9 +15,9 @@
     "react-redux": "^9.1.2",
     "react-router-bootstrap": "^0.26.3",
     "react-router-dom": "^6.24.1",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^3.0.1",
     "react-toastify": "^10.0.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^4.2.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -47,9 +44,21 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-syntax-jsx": "^7.24.7",
+    "@babel/plugin-transform-class-properties": "^7.24.7",
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.24.7",
+    "@babel/plugin-transform-numeric-separator": "^7.24.7",
+    "@babel/plugin-transform-optional-chaining": "^7.24.8",
+    "@babel/plugin-transform-private-methods": "^7.24.7",
     "@babel/plugin-transform-private-property-in-object": "^7.24.7",
+    "@babel/plugin-transform-runtime": "^7.24.7",
     "@babel/preset-env": "^7.25.3",
-    "@babel/preset-react": "^7.24.7"
+    "@babel/preset-react": "^7.24.7",
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2"
   }
 }
