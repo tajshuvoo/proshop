@@ -12,7 +12,7 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import PrivateRoute from './components/PrivateRoute';
+import PrivateRoute from './components/PrivateRoute.jsx';
 import AdminRoute from './components/AdminRoute';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
