@@ -19,6 +19,7 @@ const ProductEditScreen = () => {
   const [image, setImage] = useState('');
   const [brand, setBrand] = useState('');
   const [category, setCategory] = useState('');
+  const [SubCategory , setSubCategory] = useState('');
   const [countInStock, setCountInStock] = useState(0);
   const [description, setDescription] = useState('');
 
@@ -47,6 +48,7 @@ const ProductEditScreen = () => {
         image,
         brand,
         category,
+        SubCategory,
         description,
         countInStock,
       }).unwrap(); // NOTE: here we need to unwrap the Promise to catch any rejection in our catch block
@@ -65,6 +67,7 @@ const ProductEditScreen = () => {
       setImage(product.image);
       setBrand(product.brand);
       setCategory(product.category);
+      setSubCategory(product.SubCategory);
       setCountInStock(product.countInStock);
       setDescription(product.description);
     }
@@ -159,6 +162,16 @@ const ProductEditScreen = () => {
                 placeholder='Enter category'
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
+              ></Form.Control>
+            </Form.Group>
+
+            <Form.Group controlId='SubCategory'>
+              <Form.Label>SubCategory</Form.Label>
+              <Form.Control
+                type='text'
+                placeholder='Enter Sub category'
+                value={SubCategory}
+                onChange={(e) => setSubCategory(e.target.value)}
               ></Form.Control>
             </Form.Group>
 
