@@ -31,7 +31,7 @@ export const orderApiSlice = apiSlice.injectEndpoints({
     }),
     getMyOrders: builder.query({
       query: () => ({
-        url: `${ORDERS_URL}/mine`,
+        url: `${ORDERS_URL}/myorders`,
       }),
       keepUnusedDataFor: 5,
     }),
@@ -43,7 +43,7 @@ export const orderApiSlice = apiSlice.injectEndpoints({
     }),
     deliverOrder: builder.mutation({
       query: (orderId) => ({
-        url: `${ORDERS_URL}/${orderId}/deliver`,
+        url: `${ORDERS_URL}/${orderId}/delivered`,
         method: 'PUT',
       }),
     }),

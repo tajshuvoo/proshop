@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
 import { useProfileMutation } from '../slices/usersApiSlice';
-import { useGetMyOrdersQuery } from '../slices/ordersApiSlice';
+import { useGetMyOrdersQuery } from '../slices/ordersApiSlice'; // Ensure this import is correct and the API endpoint is properly set up
 import { setCredentials } from '../slices/authSlice';
 import { Link } from 'react-router-dom';
 
