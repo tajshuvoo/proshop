@@ -22,7 +22,7 @@ cd proshop
 Set up a MongoDB database using MongoDB Atlas or locally. Rename `.env.example` to `.env` and add the following variables:
 ```bash
 NODE_ENV=development
-PORT=5000
+PORT=8000
 MONGO_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
 PAGINATION_LIMIT=8
@@ -45,7 +45,7 @@ npm install
 ```
 
 ### 4. Running the Application
-Run both frontend and backend (Frontend on port 3000, Backend on port 5000):
+Run both frontend and backend (Frontend on port 3000, Backend on port 8000):
 ```bash
 npm run dev
 ```
@@ -76,14 +76,17 @@ npm run data:destroy
 ```
 
 ### Sample User Logins
-**Admin:**
+
+```bash
+Admin:
 - Email: admin@email.com
 - Password: 123456
 
-**Customer:**
+Customer:
 - Email: john@email.com
 - Password: 123456
 
-**Customer:**
+Customer:
 - Email: jane@email.com
 - Password: 123456
+```
