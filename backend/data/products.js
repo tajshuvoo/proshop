@@ -1,6 +1,5 @@
 const products = [
   {
-  
     name: 'Airpods Wireless Bluetooth Headphones',
     image: '/images/airpods.jpg',
     description:
@@ -8,13 +7,12 @@ const products = [
     brand: 'Apple',
     category: 'Electronics',
     SubCategory: 'Headphones',
-    price: 89.99,
+    price: (89.99 * 120).toFixed(2),
     countInStock: 10,
     rating: 4.5,
     numReviews: 12,
   },
   {
-   
     name: 'iPhone 11 Pro 256GB Memory',
     image: '/images/phone.jpg',
     description:
@@ -22,7 +20,7 @@ const products = [
     brand: 'Apple',
     category: 'Electronics',
     SubCategory: 'Phones',
-    price: 599.99,
+    price: (599.99 * 120).toFixed(2),
     countInStock: 7,
     rating: 4.0,
     numReviews: 8,
@@ -35,7 +33,7 @@ const products = [
     brand: 'Cannon',
     category: 'Electronics',
     SubCategory: 'Cameras',
-    price: 929.99,
+    price: (929.99 * 120).toFixed(2),
     countInStock: 5,
     rating: 3,
     numReviews: 12,
@@ -48,7 +46,7 @@ const products = [
     brand: 'Sony',
     category: 'Electronics',
     SubCategory: 'Consoles',
-    price: 399.99,
+    price: (399.99 * 120).toFixed(2),
     countInStock: 11,
     rating: 5,
     numReviews: 12,
@@ -61,7 +59,7 @@ const products = [
     brand: 'Logitech',
     category: 'Electronics',
     SubCategory: 'Accessories',
-    price: 49.99,
+    price: (49.99 * 120).toFixed(2),
     countInStock: 7,
     rating: 3.5,
     numReviews: 10,
@@ -74,7 +72,7 @@ const products = [
     brand: 'Amazon',
     category: 'Electronics',
     SubCategory: 'Speakers',
-    price: 29.99,
+    price: (29.99 * 120).toFixed(2),
     countInStock: 0,
     rating: 4,
     numReviews: 12,
