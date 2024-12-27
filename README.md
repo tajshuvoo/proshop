@@ -1,16 +1,20 @@
-ProShop Installation & Setup Guide
-Prerequisites
+# ProShop Installation & Setup Guide
+
+## Prerequisites
+
 Before you begin, make sure you have the following:
 
-Node.js (version 14 or higher)
-MongoDB (local or MongoDB Atlas)
-Git for cloning the repository
-Step-by-Step Setup
-1. Clone the Repository
-Clone the ProShop repository to your local machine:
+- **Node.js** (version 14 or higher)
+- **MongoDB** (local or MongoDB Atlas)
+- **Git** for cloning the repository
 
-bash
-Copy code
+---
+
+## Step-by-Step Setup
+
+### 1. Clone the Repository
+Clone the ProShop repository to your local machine:
+```bash
 git clone https://github.com/tajshuvoo/proshop.git
 cd proshop
 2. Create Environment Variables
@@ -82,4 +86,3 @@ Customer:
 Email: jane@email.com
 Password: 123456
 
-This guide should help you get started with ProShop. If you encounter any issues, feel free to check the official documentation or reach out for support.
